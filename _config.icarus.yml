@@ -1,15 +1,11 @@
 version: 4.0.0
 # 配置文件的版本
-# 伊卡洛斯主题变体，可以是“默认”或“赛博朋克”
 variant: default
 # 网站徽标的路径或URL
-logo: /img/logo.svg
-# P年龄元数据配置
+logo: "https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/%E6%97%A0%E6%A0%87%E9%A2%98.png"
 head:
-  # 网站图标的URL或路径
   favicon: /img/favicon.svg
   # Web应用程序清单配置
-  # https://developer.mozilla.org/en-US/docs/Web/Manifest
   manifest:
     # web应用程序的名称（默认为网站标题）
     name: HEAZEEL
@@ -34,7 +30,6 @@ head:
         # 关于图像媒体类型的提示
         type:
   # 开放图元数据
-  # https://hexo.io/docs/helpers.html#open-graph
   open_graph:
     # 页面标题（和：标题）
     # 你应该在大部分时间里保持空白
@@ -113,7 +108,7 @@ navbar:
   links:
     Download on GitHub:
       icon: fab fa-github
-      url: "https://github.com/ppoffice/hexo-theme-icarus"
+      url: "https://github.com/heazeel"
 # 页脚配置
 footer:
   # 要显示在页脚部分右侧的链接
@@ -126,13 +121,12 @@ footer:
       url: "https://creativecommons.org/licenses/by/4.0/"
     Download on GitHub:
       icon: fab fa-github
-      url: "https://github.com/ppoffice/hexo-theme-icarus"
+      url: "https://github.com/heazeel"
 # 与文章相关的配置
 article:
   # 代码高亮显示设置
   highlight:
     # 代码突出显示主题
-    # https://github.com/highlightjs/highlight.js/tree/master/src/styles
     theme: atom-one-light
     # 显示复制代码按钮
     clipboard: true
@@ -140,94 +134,31 @@ article:
     fold: unfolded
   # 是否显示估计的文章阅读时间
   readtime: true
-  # 第条发牌组
-  licenses:
-    Creative Commons:
-      icon: fab fa-creative-commons
-      url: "https://creativecommons.org/"
-    Attribution:
-      icon: fab fa-creative-commons-by
-      url: "https://creativecommons.org/licenses/by/4.0/"
-    Noncommercial:
-      icon: fab fa-creative-commons-nc
-      url: "https://creativecommons.org/licenses/by-nc/4.0/"
 # 搜索插件配置
-# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
   type: insight
-# 注释插件配置
-# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-  type: disqus
-  # 磁盘短名称
-  shortname: ""
-# 捐赠插件配置
-# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
-  # "Afdian.net" donate button configurations
-  - type: afdian
-    # URL to the "Afdian.net" personal page
-    url: ""
-  # 支付宝捐赠按钮配置
-  - type: alipay
-    # 支付宝qrcode图像URL
-    qrcode: ""
-  # "Buy me a coffee" donate button configurations
-  - type: buymeacoffee
-    # URL to the "Buy me a coffee" page
-    url: ""
-  # 图案
-  - type: patreon
-    # Patreon页面的URL
-    url: ""
-  # 贝宝捐赠按钮配置
-  - type: paypal
-    # Paypal企业ID或电子邮件地址
-    business: ""
-    # 货币代码
-    currency_code: USD
-  # 微信捐赠按钮配置
-  - type: wechat
-    # 微信qrcode图像网址
-    qrcode: ""
-# 共享插件配置
-# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-  type: sharethis
-  # 网址到共享这个共享插件脚本
-  install_url: ""
-# 侧边栏配置。
-# 请注意，侧边栏仅在至少有一个小部件时才能可见
+  type: valine
+  app_id: URmdycfso0YukNoucAfLUw4e-gzGzoHsz
+  app_key: YIjBiPpilaNgOV2mv8oDL3gz
+# 侧边栏配置
 sidebar:
-  # 左侧边栏配置
   left:
-    # 页面滚动时侧边栏是否粘在顶部
     sticky: true
-  # 右侧边栏配置
   right:
-    # 页面滚动时侧边栏是否粘在顶部
     sticky: true
 # 侧边栏小部件配置
-# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
   # 配置文件小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: left
+  - position: left
     type: profile
-    # 作者姓名
     author: Heazeel
-    # 作者标题
     author_title: 你的奋斗终将伟大
-    # 作者当前位置
     location: 浙江-杭州
-    # 网址或通往头像图像的路径
     avatar: "https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/avater.jpeg"
-    # 是否显示圆形头像图像
     avatar_rounded: true
-    # 格拉瓦塔尔的电子邮件地址
     gravatar:
-    # 以下按钮的网址或路径
-    follow_link: "https://github.com/ppoffice"
+    follow_link: "https://github.com/heazeel"
     # 要显示在配置文件小部件底部的链接
     # social_links:
     #     Github:
@@ -246,142 +177,45 @@ widgets:
     #         icon: fas fa-rss
     #         url: /
   # 内容表小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: left
+  - position: left
     type: toc
-    # 是否显示每个标题的索引
     index: true
-    # 当子标题处于视线之外时，是否要折叠子标题
     collapsed: true
-    # 要显示的最大标题级别 （1-6）
     depth: 3
-  # 推荐链接小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: left
-    type: links
-    # 网站的名称和网址
-    links:
-      Hexo: "https://hexo.io"
-      Bulma: "https://bulma.io"
   # 类别 小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: right
+  - position: right
     type: categories
   # 最近发布的小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: right
+  - position: right
     type: recent_posts
   # 小部件配置存档
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: left
+  - position: left
     type: archives
   # 标记小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: right
+  - position: right
     type: tags
-  # 谷歌饲料燃烧器电子邮件订阅小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: left
-    type: subscribe_email
-    # Hint text under the email input
-    description:
-    # Feedburner ID
-    feedburner_id: ""
-  # 谷歌广告感知单元配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: left
-    type: adsense
-    # AdSense client ID
-    client_id: ""
-    # AdSense AD unit ID
-    slot_id: ""
-  # Follow.it 电子邮件订阅小部件配置
-  - # 小部件应该放置在哪里，左侧栏或右侧边栏
-    position: left
-    type: followit
-    # 电子邮件输入下的提示文本
-    description:
-    # 订阅表单操作网址
-    action_url: ""
-    # 提要声明验证代码
-    verification_code: ""
 # 插件配置
-# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
   # 启用页面启动动画
   animejs: true
   # 显示"返回顶部"按钮
   back_to_top: true
   # 百度分析插件设置
-  # https://tongji.baidu.com
   baidu_analytics:
-    # Baidu Analytics tracking ID
-    tracking_id:
-  # 必应网站站长工具插件设置
-  # https://www.bing.com/toolbox/webmaster/
-  bing_webmaster:
-    # 必应网站站长工具跟踪 ID 在<meta>塔格
-    tracking_id:
+    tracking_id: 46e4f85df437d496142aaff4a8791448
   # 布桑齐网站/页面查看计数器
-  # https://busuanzi.ibruce.info
-  busuanzi: false
-  # CNZZ statistics
-  # https://www.umeng.com/web
-  cnzz:
-    # CNZZ tracker id
-    id:
-    # CNZZ website id
-    web_id:
-  # Alerting users about the use of cookies
-  # https://www.osano.com/cookieconsent/
-  cookie_consent:
-    # The compliance type. Can be "info", "opt-in", or "opt-out"
-    type: info
-    # Theme of the popup. Can be "block", "edgeless", or "classic"
-    theme: edgeless
-    # 无论页面滚动如何，弹出窗口是否应保持静态
-    static: false
-    # 在屏幕上的同意弹出窗口应显示的位置
-    position: bottom-left
-    # URL到您网站的cookie策略
-    policyLink: "https://www.cookiesandyou.com/"
+  busuanzi: true
   # 启用光画廊和合理画廊插件
   gallery: true
-  # 谷歌分析插件设置
-  # https://analytics.google.com
-  google_analytics:
-    # 谷歌分析跟踪 ID
-    tracking_id:
-  # 热刺用户反馈插件
-  # https://www.hotjar.com/
-  hotjar:
-    # 热贾尔网站 ID
-    site_id:
   # 启用 KaTeX 数学排版支持
-  # https://katex.org/
   katex: false
   # 启用 MathJax 数学排版支持
-  # https://www.mathjax.org/
   mathjax: false
   # 启用过时的浏览器插件
-  # http://outdatedbrowser.com/
   outdated_browser: false
   # 在页面加载页面顶部显示进度栏
   progressbar: true
-  # 统计统计
-  # https://statcounter.com/
-  statcounter:
-    # 统计计数器项目 ID
-    project:
-    # 统计计数器项目安全代码
-    security:
-  # 推特转换跟踪插件设置
-  # https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html
-  twitter_conversion_tracking:
-    # 推特像素 ID
-    pixel_id:
 # CDN 提供商设置
-# https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
   # JavaScript 和/或样式表 CDN 提供商的名称或 URL 模板
   cdn: jsdelivr

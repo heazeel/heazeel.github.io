@@ -2,10 +2,10 @@ title: HEAZEEL
 subtitle: heazeel
 description: heazeel的博客
 keywords: heazeel的博客
-author: John Doe
+author: heazeel
 language: zh-CN
 timezone: ""
-url: http://example.com
+url: https://github.com/heazeel
 permalink: ":year/:month/:day/:title/"
 permalink_defaults: null
 pretty_urls:
