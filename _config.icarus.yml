@@ -4,7 +4,7 @@ variant: default
 # 网站徽标的路径或URL
 logo: "https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/%E6%97%A0%E6%A0%87%E9%A2%98.png"
 head:
-  favicon: /img/favicon.svg
+  favicon: "https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/%E6%97%A0%E6%A0%87%E9%A2%98.png"
   # Web应用程序清单配置
   manifest:
     # web应用程序的名称（默认为网站标题）
