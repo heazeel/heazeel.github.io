@@ -9,6 +9,8 @@ categories: 工具
 ## 介绍
 [glob.js](https://github.com/isaacs/node-glob#readme) 是JavaScript中glob的实现，使用minimatch库来匹配，能够实现shell的匹配模式。
 
+<!-- more -->
+
 ## 语法
 
 ### 单个星号

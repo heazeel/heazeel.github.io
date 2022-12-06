@@ -2,9 +2,9 @@ version: 4.0.0
 # 配置文件的版本
 variant: default
 # 网站徽标的路径或URL
-logo: "https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/%E6%97%A0%E6%A0%87%E9%A2%98.png"
+logo: 'https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/%E6%97%A0%E6%A0%87%E9%A2%98.png'
 head:
-  favicon: "https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/%E6%97%A0%E6%A0%87%E9%A2%98.png"
+  favicon: 'https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/%E6%97%A0%E6%A0%87%E9%A2%98.png'
   # Web应用程序清单配置
   manifest:
     # web应用程序的名称（默认为网站标题）
@@ -24,9 +24,9 @@ head:
     # 可以用作不同上下文的应用程序图标的图像文件
     icons:
       - # 图像文件的路径
-        src: ""
+        src: ''
         # 包含以空格分隔的图像维度的字符串
-        sizes: ""
+        sizes: ''
         # 关于图像媒体类型的提示
         type:
   # 开放图元数据
@@ -92,7 +92,7 @@ head:
   meta:
     # Meta tag specified in <attribute>=<value> style
     # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
-    - ""
+    - ''
   # 网站RSS atom.xml的URL或路径
   rss:
 # 页面顶部导航栏配置
@@ -108,26 +108,26 @@ navbar:
   links:
     Download on GitHub:
       icon: fab fa-github
-      url: "https://github.com/heazeel"
+      url: 'https://github.com/heazeel'
 # 页脚配置
 footer:
   # 要显示在页脚部分右侧的链接
   links:
     Creative Commons:
       icon: fab fa-creative-commons
-      url: "https://creativecommons.org/"
+      url: 'https://creativecommons.org/'
     Attribution 4.0 International:
       icon: fab fa-creative-commons-by
-      url: "https://creativecommons.org/licenses/by/4.0/"
+      url: 'https://creativecommons.org/licenses/by/4.0/'
     Download on GitHub:
       icon: fab fa-github
-      url: "https://github.com/heazeel"
+      url: 'https://github.com/heazeel'
 # 与文章相关的配置
 article:
   # 代码高亮显示设置
   highlight:
     # 代码突出显示主题
-    theme: atom-one-light
+    theme: atom-one-dark
     # 显示复制代码按钮
     clipboard: true
     # 代码块的默认折叠状态。可“折叠”、“展开”
@@ -155,7 +155,7 @@ widgets:
     author: Heazeel
     author_title: 你的奋斗终将伟大
     location: 浙江-杭州
-    avatar: "https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/avater.jpeg"
+    avatar: 'https://lost-and-find.oss-cn-hangzhou.aliyuncs.com/blog/avater.jpeg'
     avatar_rounded: true
     gravatar:
     #follow_link: "https://github.com/heazeel"
